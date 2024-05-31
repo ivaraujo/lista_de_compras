@@ -23,8 +23,8 @@ btnInsert.onclick = () => {
 }
 
 function setItemDB() {
-  if (itensDB.length >= 20) {
-    alert('Limite máximo de 20 itens atingido!')
+  if (itensDB.length >= 40) {
+    alert('Limite máximo de 40 itens atingido!')
     return
   }
 
