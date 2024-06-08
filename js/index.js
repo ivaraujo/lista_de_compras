@@ -4,7 +4,7 @@ const btnDeleteAll = document.querySelector('.deletar')
 const btnResetar = document.querySelector('.resetar')
 const ul = document.querySelector('ul')
 
-var listaPrincipal = ["Teste","oi"]
+const listaPrincipal = ["Teste","oi","kkk"];
 var itensDB = []
 
 btnDeleteAll.onclick = () => {
@@ -13,7 +13,9 @@ btnDeleteAll.onclick = () => {
 }
 
 btnResetar.onclick = () => {
-  itensDB = listaPrincipal
+  for(i = 0; i < listaPrincipal.length; i++){
+    itensDB.push({ 'item': listaPrincipal[i], 'status': '' })
+  }  
   updateDB()
 }
 
