@@ -15,7 +15,6 @@ body{
 
 p{
     display: flex;
-    justify-content: center;
     font-size: xx-large;
     font-weight: bold;
     color: silver;
@@ -28,15 +27,31 @@ ul{
     font-weight: bold;
 }
 
+.header{
+    display: flex;
+    align-content: space-around;
+}
+
 .header button{
-    position:absolute;
+    position:block;
     right: 18%;
-    margin-top: -30px;
+}
+
+.header button .bx{    
+    border-radius: 8px;
+}
+
+.header button .bx-reset{  
+    background-color: lightgray;  
+    color: rgb(139, 14, 223);
+}
+
+.header button .bxs-trash-alt{
+    color: silver;
 }
 
 .header i{
-    font-size: 22px;
-    color: silver;
+    font-size: 30px; 
 }
 
 .to-do{
@@ -61,7 +76,7 @@ ul{
 }
 
 button{
-    width: 10%;
+    width: 20%;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -127,6 +142,17 @@ li{
     }
 
     p{
-        font-size: x-large;
+        font-size: 10px;
+    }
+    /*.header p{}*/
+    .header i{
+        font-size: 16px;
+    }
+    .header button{
+        display: block;
+    }
+    .header{
+        display: flex;
+        flex-direction: row;
     }
 }

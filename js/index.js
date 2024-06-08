@@ -1,12 +1,19 @@
 const texto = document.querySelector('input')
 const btnInsert = document.querySelector('.divInsert button')
-const btnDeleteAll = document.querySelector('.header button')
+const btnDeleteAll = document.querySelector('.deletar')
+const btnResetar = document.querySelector('.resetar')
 const ul = document.querySelector('ul')
 
+var listaPrincipal = ["Teste","oi"]
 var itensDB = []
 
 btnDeleteAll.onclick = () => {
   itensDB = []
+  updateDB()
+}
+
+btnResetar.onclick = () => {
+  itensDB = listaPrincipal
   updateDB()
 }
 
