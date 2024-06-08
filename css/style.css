@@ -17,7 +17,9 @@ p{
     display: flex;
     font-size: xx-large;
     font-weight: bold;
+    text-align: center;
     color: silver;
+    width: 60%;
 }
 
 ul{
@@ -29,12 +31,10 @@ ul{
 
 .header{
     display: flex;
-    align-content: space-around;
+    align-content: space-between;
 }
-
 .header button{
-    position:block;
-    right: 18%;
+    position:block;    
 }
 
 .header button .bx{    
