@@ -4,7 +4,28 @@ const btnDeleteAll = document.querySelector('.deletar')
 const btnResetar = document.querySelector('.resetar')
 const ul = document.querySelector('ul')
 
-const listaPrincipal = ["Teste","oi","kkk"];
+const listaPrincipal = ["Absorvente",
+"Açúcar",
+"Arroz Branco",
+"Arroz Integral",
+"Azeite de Olivia",
+"Café",
+"Creme dental",
+"Farinha de trigo",
+"Leite em pó",
+"Leite em pó (desnatado)",
+"Leite líquido",
+"Leite líquido (desnatado)",
+"Leite líquido (zerolactose)",
+"Macarrão",
+"Macarrão (integral)",
+"Margarina",
+"Margarina (zerolactose)",
+"Óleo de soja",
+"Sabão em pó",
+"Sabão de cocô",
+"Sabonete"
+];
 var itensDB = []
 
 btnDeleteAll.onclick = () => {
