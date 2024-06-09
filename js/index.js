@@ -73,12 +73,21 @@ btnDeleteAll.onclick = () => {
   updateDB()
 }
 
-btnResetar.onclick = () => {
+function resetador(){
   for(i = 0; i < listaPrincipal.length; i++){
     itensDB.push({ 'item': listaPrincipal[i], 'status': '' })
   }  
   updateDB()
 }
+
+btnResetar.onclick = resetador;
+
+/*btnResetar.onclick = () => {
+  for(i = 0; i < listaPrincipal.length; i++){
+    itensDB.push({ 'item': listaPrincipal[i], 'status': '' })
+  }  
+  updateDB()
+}*/
 
 texto.addEventListener('keypress', e => {
   if (e.key == 'Enter' && texto.value != '') {

@@ -15,9 +15,9 @@ body{
 
 p{
     display: flex;
+    justify-content: center;
     font-size: xx-large;
     font-weight: bold;
-    text-align: center;
     color: silver;
     width: 60%;
 }
