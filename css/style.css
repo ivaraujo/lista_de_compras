@@ -13,6 +13,10 @@ body{
     background-color: rgb(153, 30, 30);
 }
 
+a{
+    cursor: pointer;
+}
+
 p{
     display: flex;
     font-size: xx-large;
