@@ -2,7 +2,6 @@ const texto = document.querySelector('input')
 const btnInsert = document.querySelector('.divInsert button')
 const btnDeleteAll = document.querySelector('.deletar')
 const btnResetar = document.querySelector('.resetar')
-const testando = document.querySelector('.test')
 const ul = document.querySelector('ul')
 
 const listaPrincipal = ["Absorvente",
@@ -75,13 +74,6 @@ btnDeleteAll.onclick = () => {
 }
 
 btnResetar.onclick = () => {
-  for(i = 0; i < listaPrincipal.length; i++){
-    itensDB.push({ 'item': listaPrincipal[i], 'status': '' })
-  }  
-  updateDB()
-}
-
-testando.onclick = () => {
   for(i = 0; i < listaPrincipal.length; i++){
     itensDB.push({ 'item': listaPrincipal[i], 'status': '' })
   }  
